@@ -1,0 +1,1 @@
+import {AppRouter} from "./router/AppRouter";import {OverlayProvider,OverlayHost} from "./infrastructure/overlay/Overlay";export function ApplicationComposition(){return <OverlayProvider><AppRouter/><OverlayHost/></OverlayProvider>;}

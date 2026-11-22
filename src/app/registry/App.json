@@ -1,0 +1,133 @@
+{
+  "version": "2.1.0",
+  "status": "implementation-baseline",
+  "layouts": [
+    {
+      "layoutId": "app-shell"
+    },
+    {
+      "layoutId": "standalone"
+    }
+  ],
+  "pages": [
+    {
+      "pageId": "home",
+      "type": "main",
+      "title": "Home"
+    },
+    {
+      "pageId": "product-listing",
+      "type": "main",
+      "title": "Products"
+    },
+    {
+      "pageId": "live-chat",
+      "type": "shared",
+      "title": "Live Chat"
+    },
+    {
+      "pageId": "notifications",
+      "type": "shared",
+      "title": "Notifications"
+    },
+    {
+      "pageId": "cart",
+      "type": "shared",
+      "title": "Cart"
+    },
+    {
+      "pageId": "profile",
+      "type": "main",
+      "title": "Profile"
+    },
+    {
+      "pageId": "product-detail",
+      "type": "standalone",
+      "title": "Product Detail"
+    },
+    {
+      "pageId": "checkout",
+      "type": "standalone",
+      "title": "Checkout"
+    },
+    {
+      "pageId": "payment-result",
+      "type": "standalone",
+      "title": "Payment Result"
+    }
+  ],
+  "routes": [
+    {
+      "routeId": "home",
+      "path": "/app",
+      "pageId": "home",
+      "layoutId": "app-shell"
+    },
+    {
+      "routeId": "products",
+      "path": "/app/products",
+      "pageId": "product-listing",
+      "layoutId": "app-shell"
+    },
+    {
+      "routeId": "live-chat-app",
+      "path": "/app/live-chat",
+      "pageId": "live-chat",
+      "layoutId": "app-shell"
+    },
+    {
+      "routeId": "notifications-app",
+      "path": "/app/notifications",
+      "pageId": "notifications",
+      "layoutId": "app-shell"
+    },
+    {
+      "routeId": "cart-app",
+      "path": "/app/cart",
+      "pageId": "cart",
+      "layoutId": "app-shell"
+    },
+    {
+      "routeId": "profile",
+      "path": "/app/profile",
+      "pageId": "profile",
+      "layoutId": "app-shell"
+    },
+    {
+      "routeId": "product-detail",
+      "path": "/products/:productId",
+      "pageId": "product-detail",
+      "layoutId": "standalone"
+    },
+    {
+      "routeId": "notifications-standalone",
+      "path": "/notifications",
+      "pageId": "notifications",
+      "layoutId": "standalone"
+    },
+    {
+      "routeId": "cart-standalone",
+      "path": "/cart",
+      "pageId": "cart",
+      "layoutId": "standalone"
+    },
+    {
+      "routeId": "live-chat-standalone",
+      "path": "/live-chat",
+      "pageId": "live-chat",
+      "layoutId": "standalone"
+    },
+    {
+      "routeId": "checkout",
+      "path": "/checkout",
+      "pageId": "checkout",
+      "layoutId": "standalone"
+    },
+    {
+      "routeId": "payment-result",
+      "path": "/payment/result",
+      "pageId": "payment-result",
+      "layoutId": "standalone"
+    }
+  ]
+}

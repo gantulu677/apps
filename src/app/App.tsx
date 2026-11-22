@@ -1,0 +1,1 @@
+import {GlobalErrorBoundary} from "./boundaries/ErrorBoundaries";import {ApplicationComposition} from "./ApplicationComposition";export default function App(){return <GlobalErrorBoundary><ApplicationComposition/></GlobalErrorBoundary>;}
